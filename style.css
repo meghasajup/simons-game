@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001940 !important;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; 
+  }
+  
+  body.game-over {
+    background-color: red !important; 
+  }
+  
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  
+  .color-btn {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s;
+    border: 4px solid black;
+  }
+  
+  .color-btn.active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  h1, h3 {
+  color: #FFD700 !important; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+  
